@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple Website</title>
+    <meta name="description" content="Your website description">
+    <title>Example Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
-    <!-- Chargement de Tailwind via CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config -->
-    <script defer src="/assets/js/tailwindConfig.js"> </script>
-
-    <!-- Chargement du JavaScript -->
-    <script defer src="/assets/js/darkMode.js"> </script>
+    <script src="/assets/js/config/tailwindConfig.js" defer></script>
 </head>
 
 <body>
@@ -34,20 +28,23 @@
 <!--    </svg>-->
 <!--</button>-->
 
-<!-- Include Header -->
+<!-- Placeholders -->
 <div id="header-container"></div>
+<div id="hero-container"></div>
+<div id="section-1-container"></div>
+<div id="section-2-container"></div>
+<div id="section-3-container"></div>
+<div id="form"></div>
+<div id="footer-container"></div>
 
-<main class="container mx-auto text-center p-10">
-    <h2 class="text-3xl font-bold">Bienvenue sur notre blog</h2>
-    <p class="mt-4">Explorez nos articles et apprenez de nouvelles choses chaque jour.</p>
-</main>
 
-<!-- Load Header Component -->
-<script>
-    fetch('/components/header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header-container').innerHTML = data);
-</script>
+<script src="/assets/js/header.js" defer></script>
+<script src="/assets/js/hero.js" defer></script>
+<script src="/assets/js/section-1.js" defer></script>
+<script src="/assets/js/section-2.js" defer></script>
+<script src="/assets/js/section-3.js" defer></script>
+<script src="/assets/js/form.js" defer></script>
+<script src="/assets/js/footer.js" defer></script>
 
 </body>
 </html>
