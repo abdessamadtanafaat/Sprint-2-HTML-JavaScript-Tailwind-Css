@@ -1,23 +1,26 @@
-<!-- Script pour charger le thème stocké avant l'affichage -->
-
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if dark mode is enabled in localStorage and apply it
     if (localStorage.getItem('darkMode') === 'enabled') {
-    document.documentElement.classList.add('dark');
-} else {
-    document.documentElement.classList.remove('dark');
-}
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
 
-<!-- Script pour basculer entre mode clair et sombre -->
+    // Get the dark mode toggle button
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-    // Ajout d'un écouteur d'événement au bouton
-    darkModeToggle.addEventListener('click', () => {
-    // Bascule entre les modes clair et sombre
-    document.documentElement.classList.toggle('dark');
+    if (darkModeToggle) {
+        // Add event listener to toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            // Toggle dark mode on the root element
+            document.documentElement.classList.toggle('dark');
 
-    // Vérifie si le mode sombre est activé et met à jour le localStorage
-    if (document.documentElement.classList.contains('dark')) {
-    localStorage.setItem('darkMode', 'enabled');
-} else {
-    localStorage.setItem('darkMode', 'disabled');
-}
+            // Update localStorage with the current theme
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    }
 });
