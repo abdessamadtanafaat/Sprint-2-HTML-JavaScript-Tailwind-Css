@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const searchInput = document.getElementById("searchInput");
             if (searchInput) {
                 searchInput.addEventListener("focus", function () {
-                    // You can add behavior if needed when laptop search is focused
+                    //  add behavior if needed when laptop search is focused
                 });
             }
         });

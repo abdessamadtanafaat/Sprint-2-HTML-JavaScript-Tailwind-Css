@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/components/form.html")
         .then(response => response.text())
         .then(html => {
-            const formContainer = document.getElementById("form"); // Ensure this exists in your HTML
+            const formContainer = document.getElementById("form");
             if (!formContainer) {
                 console.error("Element with ID 'form' not found.");
                 return;
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isValid) {
                     console.log("Form successfully submitted");
                     console.log(nameField.value)
-                    // form.submit(); // Uncomment this if you want to submit the form
+                    // form.submit();
                 }
             });
 
