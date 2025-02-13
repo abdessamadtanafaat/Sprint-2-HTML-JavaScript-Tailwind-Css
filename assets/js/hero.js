@@ -83,11 +83,19 @@ function initWatchVideoButton() {
         const youtubeVideo = document.getElementById("youtubeVideo");
 
         console.log(videoContainer, youtubeVideo)
-        // Set the YouTube video URL
-        youtubeVideo.src = "https://www.youtube.com/embed/lCxcTsOHrjo";
 
-        // Show the video container and hide the other content
-        videoContainer.classList.remove("hidden");
-        document.getElementById("contentBox").classList.add("hidden");
+            // Hide the contentBox
+            document.getElementById("contentBox").classList.add("hidden");
+
+            // Show the video container
+            videoContainer.classList.remove("hidden");
+
+            // Set the video iframe to the same size as the contentBox
+            const contentBox = document.getElementById("contentBox");
+            const iframe = document.getElementById("videoIframe");
+
+            // Ensure the iframe matches the size of the contentBox
+            iframe.style.height = contentBox.offsetHeight + "px"; // Match height
+
     });
 }
