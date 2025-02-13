@@ -3,11 +3,10 @@
         <!-- First Container -->
         <div class="flex flex-col space-y-6">
             <div class="text-center">
-                <h2 class="text-2xl text-red-600">Trending Posts </h2>
+                <h2 class="text-2xl text-red-600">New Posts </h2>
                 <div class="w-16 h-1 bg-red-600 mx-auto mt-2"></div> <!-- Red Bar -->
                 <!-- Red Bar -->
             </div>
-
             <!-- Card 1 -->
             <div class=" bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog1.html')">
                 <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
@@ -17,7 +16,6 @@
                     <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
                 </div>
             </div>
-
             <!-- Card 1 -->
             <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog1.html')">
                 <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
@@ -28,8 +26,29 @@
                 </div>
             </div>
 
-        </div>
+            <!-- Additional Posts (Initially Hidden) -->
+            <div id="new-posts" class="space-y-6" style="display: none;">
+                <!-- Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog4.html')">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem lorem ipusm lorem </p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog5.html')">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem lorem ipusm lorem </p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Show More Button -->
+            <button id="show-more-new-posts-button" class="text-red-600 font-semibold hover:text-red-800 transition">Show More</button>
 
+        </div>
         <!-- Second Container -->
         <div class="flex flex-col space-y-6">
             <div class="text-center">
@@ -45,7 +64,6 @@
                     <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
                 </div>
             </div>
-
             <!-- Card 5 -->
             <div class=" bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog1.html')">
                 <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
@@ -55,24 +73,36 @@
                     <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
                 </div>
             </div>
-            </div>
+            <!-- Additional Posts (Initially Hidden) -->
+            <div id="trending-posts" class="space-y-6" style="display: none;">
+                <!-- Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog4.html')">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem lorem ipusm lorem </p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog5.html')">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem lorem ipusm lorem </p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                    </div>
+                </div>
 
-            <!-- Card 6 -->
-        <div class=" bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog1.html')">
-            <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
-            <div>
-                <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem
-                    lorem ipusm lorem </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                <div class="bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog5.html')">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem lorem ipusm lorem </p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
+                    </div>
+                </div>
+
             </div>
+            <!-- Show More Button -->
+            <button id="show-more-trending-posts-button" class="text-red-600 font-semibold hover:text-red-800 transition">Show More</button>
+
         </div>
-        <div class=" bg-white dark:bg-gray-800 rounded p-4 shadow-md flex items-center space-x-4 cursor-pointer hover:shadow-lg transition" onclick="openBlog('blog1.html')">
-            <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg">
-            <div>
-                <p class="text-lg font-semibold text-gray-500 dark:text-gray-400">Lorem Ipsum lorem ipusm lorem
-                    lorem ipusm lorem </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">January 9, 2025</p>
-            </div>
-        </div>
-    </div>
 </section>

@@ -2,14 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/components/section-2.html")
         .then(response => response.text())
         .then(html => {
-            // Insérer le contenu dans le conteneur avec id "section-2-container"
+            // Insert the HTML content into the container
             document.getElementById("section-2-container").innerHTML = html;
 
-            // Ajouter l'événement "Load More" après avoir inséré le contenu
-            document.getElementById('loadMoreButton').addEventListener('click', function(event) {
-                event.preventDefault();  // Empêche le rechargement de la page
+            // Get references to the 'Load More' button and the content area
+            const loadMoreButton = document.getElementById('loadMoreButton');
+            const content = document.getElementById('content');
 
-                // Nouveau contenu à ajouter
+            // Event listener for the 'Load More' button
+            loadMoreButton.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent the page from reloading
+
+                // New content to be added when the user clicks 'Show More'
                 const newContent = `
                     <p class="text-gray-500 dark:text-gray-400 mb-6">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -20,12 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     </p>
                 `;
 
-                // Ajoute le nouveau contenu à l'élément existant
-                document.getElementById('content').innerHTML += newContent;
+                // Append the new content to the existing content
+                content.innerHTML += newContent;
 
-                // Optionnel : Masquez ou désactivez le bouton après le chargement
-                document.getElementById('loadMoreButton').style.display = 'none';
+                // Change the button text to 'Show Less'
+                loadMoreButton.textContent = 'Show Less';
+                loadMoreButton.id = 'showLessButton';  // Change the button ID to reflect the "Show Less" state
+
+                // Add event listener for 'Show Less' button
+                document.getElementById('showLessButton').addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevent the page from reloading
+
+                    // Remove the newly added content (collapse it)
+                    content.innerHTML = content.innerHTML.split('<p class="text-gray-500 dark:text-gray-400 mb-6">')[0];
+
+                    // Change the button text back to 'Show More'
+                    loadMoreButton.textContent = 'Show More';
+                    loadMoreButton.id = 'loadMoreButton';  // Change the button ID back to "Show More"
+                });
             });
         })
-        .catch(error => console.error("Error loading hero section:", error));
+        .catch(error => console.error("Error loading section 2:", error));  // Log any errors
 });
