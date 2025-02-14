@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     hideError();
                     clearFormInputs(formContainer);
                     showMessage(successMessage, true);
-                    console.log(nameField.value)
                     // form.submit();
                 }
             });

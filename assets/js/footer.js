@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for email validation
     const emailInput = document.getElementById("emailInput");
-
-    emailInput.addEventListener("blur", function () {
-        validateEmail();
-    });
 });
 
 function validateEmail() {

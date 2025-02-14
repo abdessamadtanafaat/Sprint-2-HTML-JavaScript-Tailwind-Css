@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         const container = document.getElementById('card-container');
                         container.innerHTML = '';
                         visibleCards = getVisibleCardCount(); // Recalculate based on the screen size
-                        console.log(visibleCards);
 
                         // Loop through the cards to generate HTML dynamically
                         for (let i = currentCardIndex; i < currentCardIndex + visibleCards; i++) {

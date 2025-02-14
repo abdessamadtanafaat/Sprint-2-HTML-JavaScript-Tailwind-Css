@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Void SPRINT 2">
     <title>Sprint 2 - Void</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/assets/js/config/tailwindConfig.js" defer></script>
+    <link rel="preload" href="./style/output.css">
+    <link href="./style/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
     <script src="/assets/js/darkMode.js" defer></script>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900">
 
-<button id="darkModeToggle" class="fixed bottom-5 right-5 p-2 rounded-full bg-gray-200  z-50">
+<button id="darkModeToggle" class="fixed bottom-5 right-5 p-2 rounded-full bg-gray-200  z-50" aria-label="Toggle dark mode">
     <!-- Icône Lune (Mode Sombre) -->
     <svg id="moonIcon" class="w-8 h-8 dark:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
         <path d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z" fill="#1C274C"/>
@@ -43,7 +40,7 @@
 <div id="footer-container"></div>
 
 <script src="/assets/js/header.js" defer></script>
-<script src="/assets/js/hero.js"></script>
+<script src="/assets/js/hero.js" defer></script>
 <script src="/assets/js/section-1.js" defer></script>
 <script src="/assets/js/section-2.js" defer></script>
 <script src="/assets/js/section-3.js" defer></script>

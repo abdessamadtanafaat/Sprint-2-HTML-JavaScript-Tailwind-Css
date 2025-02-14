@@ -1,35 +1,35 @@
 [
   {
-    "imgSrc": "https://images.unsplash.com/photo-1738584672973-f33b662c05d4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+    "imgSrc": "assets/images/photo-1738584672973-f33b662c05d4.webp",
     "buttonText": "LOREM IPSUM LOREM",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
-    "imgSrc":"https://plus.unsplash.com/premium_photo-1738857914575-3d3b2fb7064e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8",
+    "imgSrc":"assets/images/photo-1739056656210-7c3cab6fff42.webp",
     "buttonText": "LOREM IPSUM LOREM",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
-    "imgSrc": "https://images.unsplash.com/photo-1739183646664-952f213eba02?q=80&w=3044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imgSrc": "assets/images/photo-1739183646664-952f213eba02.webp",
     "buttonText": "LOREM IPSUM LOREM",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
-    "imgSrc": "https://images.unsplash.com/photo-1739056656210-7c3cab6fff42?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D",
+    "imgSrc": "assets/images/photo-1739361133037-77be66a4ea6a.webp",
     "buttonText": "LOREM IPSUM LOREM",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
-    "imgSrc": "https://images.unsplash.com/photo-1739361133037-77be66a4ea6a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D",
+    "imgSrc": "assets/images/premium_photo-1738779001459-3c2efd2f6e88.webp",
     "buttonText": "LOREM IPSUM LOREM",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   }, {
-  "imgSrc": "https://plus.unsplash.com/premium_photo-1738779001459-3c2efd2f6e88?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\n",
+  "imgSrc": "assets/images/premium_photo-1738857914575-3d3b2fb7064e.webp",
   "buttonText": "LOREM IPSUM LOREM",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "date": "January 3, 2025"

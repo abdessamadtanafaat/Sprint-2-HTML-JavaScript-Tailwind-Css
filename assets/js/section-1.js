@@ -27,7 +27,6 @@ function toggleMorePosts(postsId, buttonId) {
     const extraPosts = document.getElementById(postsId);
     const showMoreButton = document.getElementById(buttonId);
 
-    console.log(extraPosts, showMoreButton);    // Toggle the visibility of the extra posts
     if (extraPosts.style.display === "none" || !extraPosts.style.display) {
         extraPosts.style.display = "block";
         showMoreButton.textContent = "Show Less";

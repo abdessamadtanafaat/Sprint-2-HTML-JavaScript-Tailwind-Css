@@ -1,20 +1,22 @@
-<section id="imageContainer" class="relative bg-cover bg-center py-16 px-6 transition-all duration-500">
+<section id="imageContainer" rel="preload" class="relative bg-cover bg-center py-16 px-6"
+         style="background-image: url('/assets/images/photo-1739361133037-77be66a4ea6a.webp')"
+>
   <div class="container mx-auto flex flex-col items-center justify-center">
     <!-- Box Content -->
-    <div id="contentBox" class="bg-white bg-opacity-50 backdrop-blur-lg p-8 rounded-lg shadow-lg w-full max-w-4xl mt-6 text-center transition-all duration-300">
+    <div id="contentBox" class="bg-white bg-opacity-50 backdrop-blur-lg p-8 rounded-lg shadow-lg w-full max-w-4xl mt-6 text-center">
       <h2 class="text-xl font-semibold dark:text-gray-400 text-gray-800 mb-4">The Future of Technology in 2025</h2>
       <p class="text-gray-600 mb-6">As we enter a new era, the landscape of technology is evolving faster than ever. From AI advancements to the rise of quantum computing, the future is filled with exciting possibilities. The way we interact with devices and digital ecosystems will change dramatically in the coming years. Innovations will not only enhance productivity but also revolutionize the way we live, work, and communicate.</p>
       <p class="text-gray-500 text-lg mb-6">January 9, 2025</p>
 
       <!-- Watch Video Button -->
-      <button id="watchVideoBtn" class="inline-block mt-4 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition duration-300">
+      <button id="watchVideoBtn" class="inline-block mt-4 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700">
         Watch Video
       </button>
     </div>
 
     <!-- Video Embed (Initially hidden) -->
-    <div id="videoContainer" class="hidden mt-6">
-      <iframe src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-64"></iframe>
+    <div id="videoContainer" class="hidden mt-6" data-lazy-load>
+      <iframe data-src="https://www.youtube.com/embed/r9jwGansp1E" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-64"></iframe>
     </div>
 
     <!-- Pagination -->
