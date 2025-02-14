@@ -12,9 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (htmlElement.classList.contains("dark")) {
             htmlElement.classList.remove("dark");
             localStorage.setItem("darkMode", "disabled");
+            console.log("darkMode disabled");
         } else {
             htmlElement.classList.add("dark");
             localStorage.setItem("darkMode", "enabled");
+            console.log("darkMode enabled");
+
         }
     });
 });

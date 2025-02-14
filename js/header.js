@@ -5,6 +5,24 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
 
+            // RTL : LANGUAGE
+            const languageToggle = document.getElementById('languageToggle');
+            const languageText = document.getElementById('languageText');
+
+            //console.log(languageToggle, languageText);
+            const htmlElement = document.documentElement; // Get the <html> element
+
+            // Add click event listener to toggle language
+            languageToggle.addEventListener('click', function() {
+                if (languageText.textContent === 'AR') {
+                    languageText.textContent = 'EN';
+                    htmlElement.setAttribute('dir', 'ltr'); // Set text direction to left-to-right for English
+                } else {
+                    languageText.textContent = 'AR';
+                    htmlElement.setAttribute('dir', 'rtl'); // Set text direction to right-to-left for Arabic
+                }
+            });
+
             // Get the mobile menu, button, and close button
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuButton = document.getElementById('mobileMenuButton');
@@ -46,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     //  add behavior when laptop search is focused
                 });
             }
+
+
         });
 });
 

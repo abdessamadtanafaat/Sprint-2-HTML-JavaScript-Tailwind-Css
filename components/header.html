@@ -26,6 +26,7 @@
             </nav>
 
             <!-- For Laptop Devices (search input and button next to the navigation) -->
+            <div class="flex items-center space-x-4">
             <div class="relative hidden md:block">
                 <input type="text" id="searchInput" placeholder="Search..." class="w-48 px-4 py-2 border rounded-full dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
                 <button class="absolute right-3 top-2 text-gray-500">
@@ -34,7 +35,14 @@
                     </svg>
                 </button>
             </div>
+                <!-- Language Toggle Button inside a Circle -->
+                <button id="languageToggle" class="relative p-2 rounded-full bg-gray-200 dark:bg-gray-800 z-100 cursor-pointer" aria-label="Toggle Language">
+                    <span id="languageText" class="text-gray-700 dark:text-white">EN</span>
+                    <div class="absolute inset-0 rounded-full border-2 border-gray-400 dark:border-gray-600 hover:border-red-600"></div>
+                </button>
 
+
+            </div>
             <!-- Mobile Devices (search button on the left) -->
             <div class="relative md:hidden">
                 <button id="searchButton" class="text-gray-700 dark:text-white focus:outline-none" aria-label="Search">
@@ -57,9 +65,15 @@
     </div>
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 fixed inset-0 z-50 flex flex-col">
-        <a href="#" class="block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">USERS</a>
-        <a href="#" class="block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Lorem US</a>
-        <a href="#" class="block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Nous connaître</a>
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="en">USERS</a>
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="ar" style="display: none;">المستخدمين</a>
+
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="en">Lorem US</a>
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="ar" style="display: none;">لوريم يو إس</a>
+
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="en">Nous connaître</a>
+        <a href="#" class="lang block py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="ar" style="display: none;">نعرفنا</a>
+
         <!-- Close button -->
         <button id="closeMobileMenu" class="absolute top-4 right-4 text-gray-700 dark:text-gray-200">
             ✕

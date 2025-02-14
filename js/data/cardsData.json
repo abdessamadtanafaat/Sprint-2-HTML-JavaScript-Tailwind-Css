@@ -1,36 +1,36 @@
 [
   {
     "imgSrc": "assets/images/photo-1738584672973-f33b662c05d4.webp",
-    "buttonText": "LOREM IPSUM LOREM",
+    "buttonText": "LOREM IPSUM LOREM 1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
     "imgSrc":"assets/images/photo-1739056656210-7c3cab6fff42.webp",
-    "buttonText": "LOREM IPSUM LOREM",
+    "buttonText": "LOREM IPSUM LOREM 2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
     "imgSrc": "assets/images/photo-1739183646664-952f213eba02.webp",
-    "buttonText": "LOREM IPSUM LOREM",
+    "buttonText": "LOREM IPSUM LOREM 3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
     "imgSrc": "assets/images/photo-1739361133037-77be66a4ea6a.webp",
-    "buttonText": "LOREM IPSUM LOREM",
+    "buttonText": "LOREM IPSUM LOREM 4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   },
   {
     "imgSrc": "assets/images/premium_photo-1738779001459-3c2efd2f6e88.webp",
-    "buttonText": "LOREM IPSUM LOREM",
+    "buttonText": "LOREM IPSUM LOREM 5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "January 3, 2025"
   }, {
   "imgSrc": "assets/images/premium_photo-1738857914575-3d3b2fb7064e.webp",
-  "buttonText": "LOREM IPSUM LOREM",
+  "buttonText": "LOREM IPSUM LOREM 6",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "date": "January 3, 2025"
 }

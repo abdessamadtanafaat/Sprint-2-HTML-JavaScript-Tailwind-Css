@@ -32,7 +32,7 @@ function initImageSlider() {
     }
 
     // Fetch images from the external JSON file
-    fetch('assets/js/data/heroImages.json')
+    fetch('js/data/heroImages.json')
         .then(response => response.json())
         .then(data => {
             const imageUrls = data.imageUrls; // Get the image URLs from the JSON file
