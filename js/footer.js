@@ -1,33 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Load the footer Section
-    fetch("/components/footer.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("footer-container").innerHTML = html;
-        })
-        .catch(error => console.error("Error loading footer:", error));
+    const subscribeForm = document.getElementById("subscribe-form");
+    if (!subscribeForm) return console.error("Subscribe form not found.");
 
-    // Event listener for email validation
-    const emailInput = document.getElementById("emailInput");
-});
+    subscribeForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let isValid = validateForm();
 
-function validateEmail() {
-    // Get the value from the email input field
-    const emailInput = document.getElementById("emailInput").value;
-    const errorMessage = document.getElementById("errorMessage");
-    const successMessage = document.getElementById("successMessage");
+        if (isValid) {
+            showMessage(document.getElementById("successMessage"), true);
+            clearFormInputs(subscribeForm);
+            console.log("Form successfully subscribed");
+        }
+    });
 
+    function validateForm() {
+        let isValid = true;
+        const emailInput = document.getElementById("email-input");
+        const emailValue = emailInput.value.trim();
 
-    // Regular expression for a simple email validation
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!validateEmail(emailValue)) {
+            isValid = false;
+            showError(emailInput, "errorMessage", "Please enter a valid email address.");
+        } else {
+            hideError(emailInput, "errorMessage");
+        }
 
-    // Check if the entered email matches the pattern
-    if (emailPattern.test(emailInput)) {
-        // Hide the error message if the email is valid
-        errorMessage.style.display = "none";
-        successMessage.style.display = "block";
-    } else {
-        // Show the error message if the email is invalid
-        errorMessage.style.display = "block";
+        return isValid;
     }
-}
+
+    document.querySelectorAll("#subscribe-form input").forEach(element => {
+        element.addEventListener("input", function () {
+            hideError(element, "errorMessage");
+        });
+    });
+});

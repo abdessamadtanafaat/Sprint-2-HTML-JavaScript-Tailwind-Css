@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="ltr" lang="en">
+<html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -36,9 +36,9 @@
     <div class="container mx-auto py-4 flex justify-between items-center">
         <!-- Logo and Title -->
         <div class="flex flex-col justify-start md:mx-0 md:text-left md:w-auto w-full text-center logo-text">
-            <p class="text-2xl text-red-500 font-semibold md:block">IS : simply dummy text of to</p>
-            <p class="text-gray-500 dark:text-gray-300 text-sm hidden md:block">Lorem is simply dummy text of the
-                printing and typesetting</p>
+            <p class="text-2xl text-red-500 font-semibold md:block">نص وهمي</p>
+            <p class="text-gray-500 dark:text-gray-300 text-sm hidden md:block">لوريم هو نص وهمي بسيط للطباعة وتنسيق
+                النصوص.</p>
         </div>
 
         <!-- Navigation, Search, Language, and DarkMode -->
@@ -46,9 +46,9 @@
             <!-- Navigation -->
             <nav class="md:flex hidden font-roboto gap-6 space-x-4 transition-all duration-300 ease-in-out transform">
                 <ul class="flex space-x-4 gap-8 ml-8">
-                    <li><a class="relative text-black dark:text-gray-300" href="#">USER</a></li>
-                    <li><a class="relative text-black dark:text-gray-300" href="#">LOREM US</a></li>
-                    <li><a class="relative text-black dark:text-gray-300" href="#">PRINTING US</a></li>
+                    <li><a class="relative text-black dark:text-gray-300" href="#">لوريم</a></li>
+                    <li><a class="relative text-black dark:text-gray-300" href="#">لوريم</a></li>
+                    <li><a class="relative text-black dark:text-gray-300" href="#">لوريم</a></li>
                 </ul>
             </nav>
 
@@ -77,7 +77,7 @@
                     <label for="search-input"></label>
                     <input class="py-2 px-3 rounded-full text-black dark:text-white dark:placeholder-white border border-white w-0 opacity-0 transition-all duration-300 ease-in-out transform focus:w-40 focus:opacity-100 pl-3"
                            id="search-input"
-                           placeholder="Search..." type="text">
+                           placeholder="بحث..." type="text">
                 </div>
             </div>
 
@@ -101,11 +101,9 @@
                               fill-rule="evenodd"/>
                     </svg>
                     <div class="relative items-center text-sm">
-                        <select aria-label="Select language" class="py-2 cursor-pointer dark:text-white"
-                                id="language-select"
-                                name="language">
+                        <select aria-label="Select language" class="py-2" id="language-select" name="language">
+                            <option value="ar-version.html">العربية</option>
                             <option value="index.html">English</option>
-                            <option value="ar-index.html">العربية</option>
                         </select>
                     </div>
 
@@ -142,34 +140,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white dark:bg-gray-800 fixed inset-0 z-50 flex-col" id="mobileMenu">
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="en"
-               href="#">USERS</a>
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="ar"
-               href="#" style="display: none;">المستخدمين</a>
-
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="en"
-               href="#">Lorem US</a>
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="ar"
-               href="#" style="display: none;">لوريم يو إس</a>
-
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="en"
-               href="#">Nous connaître</a>
-            <a class="lang block py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-               data-lang="ar"
-               href="#" style="display: none;">نعرفنا</a>
-
-            <!-- Close button -->
-            <button class="absolute top-4 right-4 text-gray-700 dark:text-gray-200" id="closeMobileMenu">
-                ✕
-            </button>
-        </div>
     </div>
 </header>
 
@@ -182,13 +152,13 @@
         <div class="container mx-auto flex flex-col items-center justify-center">
             <!-- Box Content -->
             <div class="bg-white dark:bg-gray-800 p-8 shadow-lg w-full max-w-4xl mt-6 text-center" id="contentBox">
-                <h2 class="text-3xl font-light dark:text-gray-400 text-gray-800 mb-4">Lorem Ipsum lorem ipusm lorem
-                    lorem ipusm lorem </h2>
-                <p class="text-gray-500 text-lg mb-6">January 9, 2025</p>
-                <!-- Watch Video Button -->
+                <h2 class="text-3xl font-light dark:text-gray-400 text-gray-800 mb-4">لوريم هو نص وهمي بسيط للطباعة
+                    وتنسيق النصوص. </h2>
+                <p class="text-gray-500 text-lg mb-6">يناير 9, 2025</p>
+                <!-- شاهد الفيديو Button -->
                 <button class="inline-block mt-4 px-6 py-3 bg-red-600 text-white font-semibold text-lg hover:bg-red-700 cursor-pointer"
                         id="video-btn">
-                    Watch Video
+                    شاهد الفيديو
                 </button>
             </div>
             <div class="video-responsive hidden mt-6" id="video-container">
@@ -228,7 +198,7 @@
             <!-- First Container -->
             <div class="flex flex-col space-y-6">
                 <div class="text-center">
-                    <h3 class="text-xl text-red-600 crimson-text-regular-italic">Dummy Texts</h3>
+                    <h3 class="text-xl text-red-600 crimson-text-regular-italic">لوريم لوريم</h3>
                     <div class="w-16 h-1 bg-red-600 mx-auto mt-2"></div> <!-- Red Bar -->
                     <!-- Red Bar -->
                 </div>
@@ -239,9 +209,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">لوريم هو نص وهمي بسيط
+                            للطباعة وتنسيق النصوص.</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -253,9 +223,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">لوريم لوريم لوريم
+                            لوريم لوريم لوريم</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -267,9 +237,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lلوريم هو نص وهمي
+                            بسيط للطباعة وتنسيق النصوص.</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -278,7 +248,7 @@
             <!-- Second Container -->
             <div class="flex flex-col space-y-6">
                 <div class="text-center">
-                    <h2 class="text-xl text-red-600 crimson-text-regular-italic">Known Print</h2>
+                    <h2 class="text-xl text-red-600 crimson-text-regular-italic">لوريم لوريم</h2>
                     <div class="w-16 h-1 bg-red-600 mx-auto mt-2"></div> <!-- Red Bar -->
                 </div>
                 <!-- Card 6 -->
@@ -288,9 +258,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">لوريم هو نص وهمي بسيط
+                            للطباعة وتنسيق النصوص.</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -301,9 +271,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">لوريم هو نص وهمي بسيط
+                            للطباعة وتنسيق النصوص.</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -314,9 +284,9 @@
                              loading="lazy" src="/assets/images/photo-1738584672973-f33b662c05d4.webp">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">Lorem Ipsum lorem
-                            ipusm lorem lorem ipusm lorem</p>
-                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">January 9,
+                        <p class="text-lg crimson-text-regular-bold text-black dark:text-gray-400">لوريم هو نص وهمي بسيط
+                            للطباعة وتنسيق النصوص.</p>
+                        <p class="text-sm text-gray-500 crimson-text-regular-bold dark:text-gray-400 mt-1">يناير 9,
                             2025</p>
                     </div>
                 </div>
@@ -339,24 +309,19 @@
             <!-- Text Content -->
             <div class="w-full md:w-1/2 bg-gray-100 dark:bg-gray-800 p-8 md:p-12 flex flex-col justify-center transition-all duration-300">
                 <h2 class="text-3xl font-light italic text-black dark:text-gray-300 mb-4">
-                    Lorem Ipsum is simply do text of the printing.
+                    لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
                 </h2>
                 <p class="text-black dark:text-gray-300 mb-6 overflow-hidden" id="content" style="max-height: 80px;">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has survived
-                    not only five centuries. <span class="hidden" id="more-text">
-                Contrary to popular belief, Lorem Ipsum is not simply random text.
-                It has roots in a piece of classical Latin literature from 45 BC,
-                making it over 2000 years old.
-                </span>
+                    لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص. <span class="hidden" id="more-text">
+                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
+                Iلوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
+لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.                </span>
                 </p>
                 <div class="flex">
                     <button class="w-fit px-4 py-2 text-sm rounded bg-red-600 dark:bg-red-500 text-white hover:bg-red-700 dark:hover:bg-red-600 transition-all duration-300 cursor-pointer"
                             data-expanded="false"
                             id="load-more-button">
-                        Show More
+                        عرض المزيد
                     </button>
                 </div>
             </div>
@@ -370,7 +335,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Box 1 -->
                 <div class=" relative bg-white dark:bg-gray-800 p-6">
-                    <h3 class="roboto text-black dark:text-gray-400">EIUS MODI TEMPO</h3>
+                    <h3 class="roboto text-black dark:text-gray-400">لوريم هو نص وهمي بسيط </h3>
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <picture>
                         <source media="(max-width: 600px)"
@@ -381,10 +346,10 @@
                              loading="lazy" src="/assets/images/premium_photo-1686729237226-0f2edb1e8970.jpeg">
                     </picture>
 
-                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">May 6, 2015 |
-                        fact that a is</p>
+                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">لوريم هو نص وهمي بسيط
+                        للطباعة وتنسيق النصوص. لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.</p>
+                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">ماي 6, 2015 |
+                        لوريم هو نص</p>
 
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <!-- Sub-boxes -->
@@ -393,8 +358,9 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 1" class="w-16 aspect-[1.5] object-cover"
                                  src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm crimson-text">Lorem Ipsum lorem ipusm lorem
-                                lorem ipusm lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm crimson-text">Lلوريم هو نص وهمي بسيط للطباعة
+                                وتنسيق النصوص.
+                                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص. </p>
                         </div>
 
                         <div class="w-full h-px bg-gray-300 dark:bg-gray-500"></div>
@@ -403,15 +369,15 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 2" class="w-16 aspect-[1.5] object-cover"
                                  loading="lazy" src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm">Lorem Ipsum lorem ipusm lorem lorem ipusm
-                                lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm">Lلوريم هو نص وهمي بسيط للطباعة وتنسيق
+                                النصوص. </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Box 2 -->
                 <div class=" relative bg-white dark:bg-gray-800 p-6">
-                    <h3 class="roboto text-black dark:text-gray-400">EIUS MODI TEMPO</h3>
+                    <h3 class="roboto text-black dark:text-gray-400">لوريم هو نص وهمي بسيط </h3>
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <!-- Picture element for responsive images -->
                     <picture>
@@ -423,10 +389,10 @@
                              loading="lazy" src="/assets/images/premium_photo-1686729237226-0f2edb1e8970.jpeg">
                     </picture>
 
-                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">May 6, 2015 |
-                        fact that a is</p>
+                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">لوريم هو نص وهمي بسيط
+                        للطباعة وتنسيق النصوص.لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.</p>
+                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">ماي 6, 2015 |
+                        لوريم هو نص</p>
 
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <!-- Sub-boxes -->
@@ -435,8 +401,8 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 1" class="w-16 aspect-[1.5] object-cover"
                                  src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm crimson-text">Lorem Ipsum lorem ipusm lorem
-                                lorem ipusm lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm crimson-text">لوريم هو نص وهمي بسيط للطباعة
+                                وتنسيق النصوص. </p>
                         </div>
 
                         <div class="w-full h-px bg-gray-300 dark:bg-gray-500"></div>
@@ -445,15 +411,15 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 2" class="w-16 aspect-[1.5] object-cover"
                                  loading="lazy" src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm">Lorem Ipsum lorem ipusm lorem lorem ipusm
-                                lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm">Lلوريم هو نص وهمي بسيط للطباعة وتنسيق
+                                النصوص. </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Box 3 -->
                 <div class=" relative bg-white dark:bg-gray-800 p-6">
-                    <h3 class="roboto text-black dark:text-gray-400">EIUS MODI TEMPO</h3>
+                    <h3 class="roboto text-black dark:text-gray-400">لوريم هو نص وهمي بسيط </h3>
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <!-- Picture element for responsive images -->
                     <picture>
@@ -465,10 +431,10 @@
                              loading="lazy" src="/assets/images/premium_photo-1686729237226-0f2edb1e8970.jpeg">
                     </picture>
 
-                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">May 6, 2015 |
-                        fact that a is</p>
+                    <p class="text-black dark:text-gray-400 text-center crimson-text-regular">لوريم هو نص وهمي بسيط
+                        للطباعة وتنسيق النصوص.</p>
+                    <p class="text-gray-500 dark:text-gray-600 text-sm mt-2 text-center roboto-condensed">ماي 6, 2015 |
+                        لوريم هو نص</p>
 
                     <div class="w-full h-px bg-gray-300 dark:bg-gray-500 mt-2"></div>
                     <!-- Sub-boxes -->
@@ -477,8 +443,8 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 1" class="w-16 aspect-[1.5] object-cover"
                                  src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm crimson-text">Lorem Ipsum lorem ipusm lorem
-                                lorem ipusm lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm crimson-text">لوريم هو نص وهمي بسيط للطباعة
+                                وتنسيق النصوص. </p>
                         </div>
 
                         <div class="w-full h-px bg-gray-300 dark:bg-gray-500"></div>
@@ -487,8 +453,8 @@
                         <div class="flex items-center space-x-3">
                             <img alt="Sub-box 2" class="w-16 aspect-[1.5] object-cover"
                                  loading="lazy" src="/assets/images/photo-1739361133037-77be66a4ea6a.webp">
-                            <p class="text-black dark:text-gray-400 text-sm">Lorem Ipsum lorem ipusm lorem lorem ipusm
-                                lorem </p>
+                            <p class="text-black dark:text-gray-400 text-sm">لوريم هو نص وهمي بسيط للطباعة وتنسيق
+                                النصوص. </p>
                         </div>
                     </div>
                 </div>
@@ -510,17 +476,17 @@
                     <div class="p-6 text-center shadow-lg">
                         <div class="mb-8">
                             <button class="dark:text-white text-dark roboto-condensed text-sm font-semi-bold border-2 px-4 py-1.5 dark:hover:bg-gray-400 hover:bg-gray-100 transition">
-                                LOREM IPSUM LOREM
+                                لوريم هو نص وهمي
                             </button>
                         </div>
                         <div class="mb-4">
                             <p class="crimson-text-regular text-base text-black dark:text-gray-400 ml-2">
-                                Lorem Ipsum lorem ipusm lorem lorem ipusm lorem lorem ipusm
+                                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
                             </p>
                         </div>
                         <div class="mb-2">
                             <p class="text-sm roboto-condensed text-gray-400 dark:text-gray-400">
-                                May 6, 2025 | velit esse ci
+                                ماي 6, 2025 | لوريم هو نص
                             </p>
                         </div>
                     </div>
@@ -530,17 +496,17 @@
                     <div class="p-6 text-center">
                         <div class="mb-8">
                             <button class="dark:text-white text-dark roboto-condensed text-sm font-semi-bold border-2 px-4 py-1.5 dark:hover:bg-gray-400 hover:bg-gray-100 transition">
-                                LOREM IPSUM LOREM
+                                لوريم هو نص وهمي
                             </button>
                         </div>
                         <div class="mb-4">
                             <p class="crimson-text-regular text-base text-black dark:text-gray-400 ml-2">
-                                Lorem Ipsum lorem ipusm lorem lorem ipusm lorem lorem ipusm
+                                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
                             </p>
                         </div>
                         <div class="mb-2">
                             <p class="text-sm roboto-condensed text-gray-400 dark:text-gray-400">
-                                May 6, 2025 | velit esse ci
+                                ماي 6, 2025 | لوريم هو نص
                             </p>
                         </div>
                     </div>
@@ -550,17 +516,17 @@
                     <div class="p-6 text-center">
                         <div class="mb-8">
                             <button class="dark:text-white text-dark roboto-condensed text-sm font-semi-bold border-2 px-4 py-1.5 dark:hover:bg-gray-400 hover:bg-gray-100 transition">
-                                LOREM IPSUM LOREM
+                                لوريم هو نص وهمي
                             </button>
                         </div>
                         <div class="mb-4">
                             <p class="crimson-text-regular text-base text-black dark:text-gray-400 ml-2">
-                                Lorem Ipsum lorem ipusm lorem lorem ipusm lorem lorem ipusm
+                                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
                             </p>
                         </div>
                         <div class="mb-2">
                             <p class="text-sm roboto-condensed text-gray-400 dark:text-gray-400">
-                                May 6, 2025 | velit esse ci
+                                ماي 6, 2025 | لوريم هو نص
                             </p>
                         </div>
                     </div>
@@ -570,17 +536,17 @@
                     <div class="p-6 text-center">
                         <div class="mb-8">
                             <button class="dark:text-white text-dark roboto-condensed text-sm font-semi-bold border-2 px-4 py-1.5 dark:hover:bg-gray-400 hover:bg-gray-100 transition">
-                                LOREM IPSUM LOREM
+                                لوريم هو نص وهمي.
                             </button>
                         </div>
                         <div class="mb-4">
                             <p class="crimson-text-regular text-base text-black dark:text-gray-400 ml-2">
-                                Lorem Ipsum lorem ipusm lorem lorem ipusm lorem lorem ipusm
+                                لوريم هو نص وهمي بسيط للطباعة وتنسيق النصوص.
                             </p>
                         </div>
                         <div class="mb-2">
                             <p class="text-sm roboto-condensed text-gray-400 dark:text-gray-400">
-                                May 6, 2025 | velit esse ci
+                                ماي 6, 2025 | لوريم هو نص
                             </p>
                         </div>
                     </div>
@@ -595,9 +561,8 @@
             <!-- Container with Contact Info -->
             <div class="flex flex-col space-y-4">
                 <!-- Contact Info -->
-                <h2 class="text-3xl font-bold text-red-800">Contact Us</h2>
-                <h3 class="text-xl crimson-text-regular-bold text-gray-500 dark:text-gray-400">We'd love to hear from
-                    you!</h3>
+                <h2 class="text-3xl font-bold text-red-800">اتصل بنا</h2>
+                <h3 class="text-xl crimson-text-regular-bold text-gray-500 dark:text-gray-400">نحن نحب أن نسمع منك!</h3>
                 <div class="flex items-center space-x-4">
                     <svg fill="none" height="13" viewBox="0 0 14 13" width="14" xmlns="http://www.w3.org/2000/svg">
                         <path clip-rule="evenodd"
@@ -635,7 +600,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <!-- Name  -->
                     <div class="space-y-2">
-                        <label class="block crimson-text-regular font-bold text-black dark:text-gray-400" for="name">Name</label>
+                        <label class="block crimson-text-regular font-bold text-black dark:text-gray-400" for="name">الاسم</label>
                         <input
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500 placeholder-gray-100"
                                 id="name"
@@ -646,11 +611,12 @@
                                 type="text"
                         />
 
-                        <span class="text-red-600 text-sm hidden" id="name-error">Please enter your name</span>
+                        <span class="text-red-600 text-sm hidden" id="name-error">يرجى إدخال اسمك</span>
                     </div>
                     <!-- Email -->
                     <div class="space-y-2">
-                        <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold " for="email">Email</label>
+                        <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold " for="email">البريد
+                            الإلكتروني</label>
                         <input
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                                 id="email"
@@ -659,30 +625,30 @@
                                 required
                                 type="email"
                         />
-                        <span class="text-red-600 text-sm hidden" id="email-error">Please enter a valid email</span>
+                        <span class="text-red-600 text-sm hidden" id="email-error">يرجى إدخال بريد إلكتروني صالح</span>
                     </div>
                     <!-- Country Selection -->
                     <div class="space-y-2">
                         <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold "
-                               for="country">Country</label>
+                               for="country">الدولة</label>
                         <select
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                                 id="country"
                                 name="country"
                                 required
                         >
-                            <option class="text-gray-800" value="">Country</option>
-                            <option value="USA">Morocco</option>
-                            <option value="USA">United States</option>
-                            <option value="Canada">Canada</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="Germany">Germany</option>
-                            <option value="France">France</option>
-                            <option value="India">India</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Australia">Australia</option>
+                            <option class="text-gray-800" value="">الدولة</option>
+                            <option value="USA">المغرب</option>
+                            <option value="USA">الولايات المتحدة</option>
+                            <option value="Canada">كندا</option>
+                            <option value="UK">المملكة المتحدة</option>
+                            <option value="Germany">ألمانيا</option>
+                            <option value="France">فرنسا</option>
+                            <option value="India">الهند</option>
+                            <option value="Japan">اليابان</option>
+                            <option value="Australia">أستراليا</option>
                         </select>
-                        <span class="text-red-600 text-sm hidden" id="country-error">Please select your country</span>
+                        <span class="text-red-600 text-sm hidden" id="country-error">يرجى اختيار دولتك</span>
                     </div>
                 </div>
 
@@ -690,22 +656,22 @@
                     <!-- Subject Section -->
                     <div class="space-y-2">
                         <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold "
-                               for="subject">Subject</label>
+                               for="subject">الموضوع</label>
                         <input
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                                 id="subject"
                                 minlength="5"
                                 name="subject"
-                                placeholder="What's the subject ?"
+                                placeholder="ما هو الموضوع؟"
                                 required
                                 type="text"
                         />
-                        <span class="text-red-600 text-sm hidden" id="subject-error">Please enter a subject</span>
+                        <span class="text-red-600 text-sm hidden" id="subject-error">يرجى إدخال الموضوع</span>
                     </div>
                     <!-- Date of Birth Section -->
                     <div class="space-y-2">
-                        <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold ">Date of
-                            birth</label>
+                        <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold ">تاريخ
+                            الميلا</label>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <!-- Day -->
                             <div class="space-y-2">
@@ -721,7 +687,7 @@
                                         type="number"
                                 />
                                 <span class="text-red-600 text-sm hidden"
-                                      id="day-error">Please enter a valid day (1-31)</span>
+                                      id="day-error">يرجى إدخال يوم صالح (1-31)</span>
                             </div>
 
                             <!-- Month -->
@@ -733,21 +699,21 @@
                                         name="month"
                                         required
                                 >
-                                    <option value="">MM</option>
-                                    <option value="1">January</option>
-                                    <option value="2">February</option>
-                                    <option value="3">March</option>
-                                    <option value="4">April</option>
-                                    <option value="5">May</option>
-                                    <option value="6">June</option>
-                                    <option value="7">July</option>
-                                    <option value="8">August</option>
-                                    <option value="9">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
+                                    <option value="">الشهر</option>
+                                    <option value="1">يناير</option>
+                                    <option value="2">فبراير</option>
+                                    <option value="3">مارس</option>
+                                    <option value="4">أبريل</option>
+                                    <option value="5">ماي</option>
+                                    <option value="6">يونيو</option>
+                                    <option value="7">يوليو</option>
+                                    <option value="8">أغسطس</option>
+                                    <option value="9">سبتمبر</option>
+                                    <option value="10">أكتوبر</option>
+                                    <option value="11">نوفمبر</option>
+                                    <option value="12">ديسمبر</option>
                                 </select>
-                                <span class="text-red-600 text-sm hidden" id="month-error">Please select a month</span>
+                                <span class="text-red-600 text-sm hidden" id="month-error">يرجى اختيار الشهر</span>
                             </div>
 
                             <!-- Year -->
@@ -762,7 +728,7 @@
                                     required
                                     type="number"
                             />
-                                <span class="text-red-600 text-sm hidden" id="year-error">Please enter a valid year (1900-2024)</span>
+                                <span class="text-red-600 text-sm hidden" id="year-error">يرجى إدخال سنة صالحة (1900-2024)</span>
                             </div>
                         </div>
                     </div>
@@ -771,13 +737,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
                     <div class="space-y-2">
                         <label class="block text-black dark:text-gray-400 crimson-text-regular font-bold "
-                               for="message">Message</label>
+                               for="message">الرسالة</label>
                         <textarea
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                                 id="message"
                                 minlength="10"
                                 name="message"
-                                placeholder="Leave your message here"
+                                placeholder="اترك رسالتك هنا"
                                 required
                                 rows="4"
                         ></textarea>
@@ -788,8 +754,7 @@
                 <!-- File Upload -->
                 <div class="space-y-4">
                     <label class="block mb-2 text-sm crimson-text-regular font-bold  dark:text-gray-400 text-gray-900 "
-                           for="file_input">Upload
-                        file</label>
+                           for="file_input">رفع الملف</label>
                     <input aria-describedby="file_input_help"
                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-200"
                            id="file_input" type="file">
@@ -804,22 +769,23 @@
                         <input class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                                id="link-checkbox" type="checkbox"
                                value="">
-                        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="link-checkbox">I
-                            agree with the
-                            <a class="text-red-600 dark:text-red-600 hover:underline" href="#">terms and conditions</a>.
+                        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="link-checkbox">أنا
+                            أوافق على
+                            <a class="text-red-600 dark:text-red-600 hover:underline" href="#">الشروط والأحكام</a>.
                         </label>
                     </div>
-                    <span class="text-red-600 text-sm hidden" id="checkbox-error">You must agree to the terms and conditions.</span>
+                    <span class="text-red-600 text-sm hidden"
+                          id="checkbox-error">يجب عليك الموافقة على الشروط والأحكام.</span>
                 </fieldset>
                 <div>
                     <button
                             class="w-full py-3 bg-red-600 text-gray-200 rounded hover:bg-red-700 transition-colors"
                             type="submit"
                     >
-                        Send Message
+                        إرسال الرسالة
                     </button>
                     <span class="text-green-600 text-sm text-center hidden"
-                          id="success-submitted">Form submitted!.</span>
+                          id="success-submitted">تم إرسال النموذج!</span>
                 </div>
             </form>
 
@@ -836,18 +802,16 @@
             <form action="#" id="subscribe-form" method="POST" novalidate>
                 <!-- Label and Input -->
                 <div class="flex flex-col">
-                    <p class="text-black dark:text-gray-400 font-semibold" id="subscribe-text-en">Subscribe to our
-                        Newsletter</p>
-                    <p class="text-black dark:text-gray-400 font-semibold hidden" id="subscribe-text-ar">اشترك في نشرتنا
+                    <p class="text-black dark:text-gray-400 font-semibold" id="subscribe-text-en">اشترك في نشرتنا
                         الإخبارية</p>
                     <div class="flex flex-col md:flex-row overflow-hidden mt-2">
                         <label for="email-input"></label>
                         <input class="text-gray-500 dark:text-gray-400 px-4 py-2 bg-white dark:bg-gray-800 focus:outline-none dark:border-gray-600 dark:placeholder-gray-400" id="email-input"
-                               placeholder="Enter your email"
+                               placeholder="أدخل بريدك الإلكتروني"
                                required type="email"/>
                         <button class="bg-red-600 text-gray-200 px-5 py-2 font-semibold w-full md:w-auto" id="subscribe"
                                 type="submit"
-                        >Subscribe
+                        >اشترك
                         </button>
                     </div>
                     <p class="text-red-600 text-sm mt-2 hidden" id="errorMessage">Please enter a valid email
@@ -936,7 +900,7 @@
     </div>
     <!-- Bottom Text -->
     <p class="text-center text-gray-500 dark:text-gray-400 mt-6 text-sm">
-        It is a long established fact that a reader will be distracted by the readable content.
+        من المعروف منذ وقت طويل أن القارئ سيتشتت بسبب المحتوى القابل للقراءة.
     </p>
 
 </footer>
@@ -944,7 +908,6 @@
 <!--Script-->
 <script defer src="/js/search.js"></script>
 <script defer src="/js/darkMode.js"></script>
-<script defer src="/js/form-utils.js"></script>
 <script defer src="/js/slider.js"></script>
 <script defer src="/js/show-more-less.js"></script>
 <script defer src="/js/form.js"></script>
@@ -952,6 +915,7 @@
 <script defer src="/js/watch-video.js"></script>
 <script defer src="/js/scroll-effect.js"></script>
 <script defer src="/js/language.js"></script>
+<script defer src="/js/form-utils.js"></script>
 
 
 </body>

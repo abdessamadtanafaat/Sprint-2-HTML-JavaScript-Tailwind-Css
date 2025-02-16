@@ -1,0 +1,118 @@
+p{
+    font-family: "IBM Plex Sans", serif;
+}
+a{
+    font-family: "Roboto", serif;
+}
+h2 {
+    font-family: "Crimson Text", serif;
+}
+
+.roboto{
+    font-family: "Roboto", serif;
+}
+
+.roboto-condensed{
+    font-family: "Roboto Condensed", serif;
+}
+
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Initially hide the video container */
+#video-container {
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For larger screens (laptops) */
+@media screen and (min-width: 1025px) {
+    #video-container iframe {
+        width: 1920px;  /* Fixed width for large screens */
+        height: 720px;  /* Fixed height for large screens */
+    }
+}
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    #video-container iframe {
+        width: 100%;   /* Full width of the container */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
+/* For mobile screens (small devices) */
+@media screen and (max-width: 560px) {
+    #video-container iframe {
+        width: 90%;   /* Smaller width for mobile devices */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+section {
+    opacity: 0;
+    transform: translateY(10px); /* For upward transition */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transition for translation */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset to original position when visible */
+}
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease-in-out;
+}
+
